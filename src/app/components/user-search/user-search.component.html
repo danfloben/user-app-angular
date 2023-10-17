@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <label for="tipoDocumento" style="color: gray;">Todos los campos son obligatorios.</label><br><br>
+
+        <div class="col-md-6">
+            <label for="tipoDocumento">Tipo de documento:</label>
+            <select id="tipoDocumento" class="form-select" [(ngModel)]="selectedDocumentType" name="tipoDocumento" style="display: block;">
+                <option value="C">Cédula</option>
+                <option value="P">Pasaporte</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="numeroDocumento">Número de documento:</label>
+            <input id="numeroDocumento" type="number" class="form-control" [(ngModel)]="documentNumber" name="numeroDocumento" style="display: block;">
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <button class="btn btn-primary" [disabled]="!selectedDocumentType || !documentNumber" style="display: block;" (click)="search()">Buscar</button>
+        </div>
+    </div>
+</div>

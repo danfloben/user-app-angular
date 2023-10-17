@@ -1,0 +1,36 @@
+
+<div class="container">
+    <fieldset>
+        <legend>Información Básica</legend>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" value="{{ user.firstName }}" disabled>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" value="{{ user.lastName }}" disabled>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" value="{{ user.phone }}" disabled>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" id="direccion" value="{{ user.address }}" disabled>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" value="{{ user.city }}" disabled>
+            </div>
+        </div>
+    </fieldset>
+</div>

@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+// Set the full page height so we can stick the footer to the bottom
+html,
+body {
+    height: 100%;
+}
